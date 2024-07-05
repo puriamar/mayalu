@@ -50,6 +50,7 @@ const Countdown = ({ targetDate }) => {
 
   return (
     <div className="countdown">
+      <h3>Days Till August 23rd</h3>
       {timeComponents.length ? timeComponents : <span>Time's up!</span>}
     </div>
   );

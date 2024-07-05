@@ -1,15 +1,16 @@
 import "./App.css";
-import Countdown from "./components/countdown";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/home";
+import Puzzle from "./components/puzzle";
 
 function App() {
-  const targetDate = "August 23, 2024 10:00:00 PST";
-
   return (
-    <>
-      <div>
-        <Countdown targetDate={targetDate} />
-      </div>
-    </>
+    <Router basename="/mayalu/">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/puzzle" element={<Puzzle />} />
+      </Routes>
+    </Router>
   );
 }
 
