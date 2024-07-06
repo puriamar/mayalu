@@ -108,16 +108,83 @@ function Quiz() {
       ],
       answer: "One with Respect, Trust, and Love",
     },
+    {
+      question:
+        "Pick the most important goal you both wanna achieve before end of this year.",
+      options: [
+        "Travel to a new country",
+        "Finalize the plan to close the gap and end LDR and live together",
+        "Get a new job",
+        "Visit each other at least 2 times",
+      ],
+      answer:
+        "Finalize the plan to close the gap and end LDR and live together",
+    },
+    {
+      question:
+        "When do you think was the first time for Amu when he knew he wanted to be in a relationship with you?",
+      options: [
+        "When he first saw you",
+        "When he first talked to you",
+        "Three weeks after talking to you",
+        "When he first had sex with you",
+      ],
+      answer: "Three weeks after talking to you",
+    },
+    {
+      question: "What do you think Amu finds most attractive about you?",
+      options: [
+        "Your smile",
+        "When you give a kiss to him on facetime",
+        "Your morning voice when you say 'Good Morning, I Love You'",
+        "Your personality",
+      ],
+      answer: "Your morning voice when you say 'Good Morning, I Love You'",
+    },
+    {
+      question:
+        "Imagine Amu is watching one of the important Real Madrid games and you are having a bad day and need attention. What do you think would Amu would do?",
+      options: [
+        "He will ignore you and watch the game",
+        "He will watch the game but also give you attention",
+        "He will stop watching the game and try to understand your problem and cheer you and watch the highlights later",
+        "He will ask you to sleep until game is done.",
+      ],
+      answer:
+        "He will stop watching the game and try to understand your problem and cheer you and watch the highlights later",
+    },
+    {
+      question: "How excited are you for August 23rd, 2024?",
+      options: [
+        "Amu knows, the only answer is 'More than any thing in the world.'",
+        "Amu knows, the only answer is 'More than any thing in the world.'",
+        "Amu knows, the only answer is 'More than any thing in the world.'",
+        "Amu knows, the only answer is 'More than any thing in the world.'",
+      ],
+      answer:
+        "Amu knows, the only answer is 'More than any thing in the world.'",
+    },
+    {
+      question: "What kind of date do you prefer on a rainy day?",
+      options: [
+        "Go shopping and have a dinner",
+        "Go on a long drive and have a coffee",
+        "Go out and enjoy the rain",
+        "Stay in cook together, watch movies, cuddle and sex",
+      ],
+      answer: "Stay in cook together, watch movies, cuddle and sex",
+    },
   ];
 
   return (
     <div>
-      <h1>
+      <h1 style={{ color: "pink" }}>Amu &#10084; Saiyu</h1>
+      <h3>
         {currQuestion < 5
           ? "These are just some warm up questions mutu."
           : "Alright, lets get it real now."}
-      </h1>
-      <h1>{currQuestion < 5 ? "Be prepared for the real ones." : ""}</h1>
+      </h3>
+      <h3>{currQuestion < 5 ? "Be prepared for the real ones." : ""}</h3>
       <h2>
         {currQuestion + 1}: {questions[currQuestion].question}
       </h2>

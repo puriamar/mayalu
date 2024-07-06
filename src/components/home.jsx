@@ -2,7 +2,7 @@
 import React from "react";
 import Countdown from "./countdown";
 import { Link } from "react-router-dom";
-import firstDate from "../assets/firstDate.svg";
+import firstDate from "../assets/seven.svg";
 
 function Home() {
   const targetDate = "August 23, 2024 16:00:00 PST";
